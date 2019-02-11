@@ -1,0 +1,19 @@
+.ui.inverted.menu {
+    border-radius: 0;
+}
+
+.login-form {
+    margin-top: 6.5em;
+}
+
+.ui.list {
+    margin: 2.5em !important;
+}
+
+.your-events-header {
+    margin-left: 1em;
+}
+
+.ui.massive.menu {
+    font-size: 1.5em !important;
+}
