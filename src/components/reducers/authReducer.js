@@ -2,7 +2,7 @@ import * as actionTypes from '../actions/actionTypes';
 import * as dotProp from 'dot-prop-immutable';
 
 const initialState = {
-    user: null,
+    auth: null,
     userLoading: null
 };
 
@@ -15,7 +15,7 @@ const authReducer = (state = initialState, action) => {
 
         case actionTypes.FETCH_USER_SUCCESS:
             rState = dotProp.set(rState, `userLoading`, 2)
-            rState = dotProp.set(rState, `user`, action.data)
+            rState = dotProp.set(rState, `auth`, action.data)
             return rState
 
         case actionTypes.FETCH_USER_ERROR:

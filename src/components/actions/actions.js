@@ -9,7 +9,6 @@ export const loginUser = (email, password) => (dispatch, getState, { api }) => {
     return api.post('users/login', data)
         .then(data => {
             dispatch({ type: actionTypes.FETCH_USER_SUCCESS, data: data})
-            console.log(data);
             return data;
         })
         .catch(() => dispatch({ type: actionTypes.FETCH_USER_ERROR }))

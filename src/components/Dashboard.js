@@ -10,7 +10,7 @@ class Dashboard extends Component {
             <div>
                 <Grid style={{ height: '100%' }} textAlign='justified'>
                     <Grid.Column>
-                        <ContentEditor />
+                        <EventsList />
                     </Grid.Column>
                 </Grid>
             </div>
